@@ -31,14 +31,7 @@ module.exports = function toReadable (number) {
 //                    console.log(digit_low[hun]+' '+'hundred');
                     return digit_low[hun]+' '+'hundred';
                     } else if (number>100 && number<1000 && number-hun*100<20) {
-//                        console.log(digit_low[hun]+' '+'hundred'+' '+digit_low[number-hun*100]);
-                        return digit_low[hun]+' '+'hundred'+' '+digit_low[number-hun*100];
-                        } else if (number>100 && number<1000 && number%10===0) {
-//                            console.log(digit_low[hun]+' '+'hundred'+' '+digit_mid[(number%100)/10-2]);
-                            return digit_low[hun]+' '+'hundred'+' '+digit_mid[(number%100)/10-2];
-                            } else {
-//                                console.log(digit_low[hun]+' '+'hundred'+' '+digit_mid[(number%100-ost)/10-2]+' '+digit_low[number%10]);
-                                return digit_low[hun]+' '+'hundred'+' '+digit_mid[(number%100-ost)/10-2]+' '+digit_low[number%10];
+
                             }
 }
 ///////////////
